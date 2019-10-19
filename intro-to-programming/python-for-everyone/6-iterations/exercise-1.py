@@ -9,7 +9,6 @@ while True:
         inp = input("Enter a number: ")
         if inp == "done":
             print("{} {} {}".format(total, count, total / count))
-            break
         else:
             number = int(inp)
             count += 1;
