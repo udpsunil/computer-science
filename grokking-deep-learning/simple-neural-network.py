@@ -1,10 +1,9 @@
 # Simple neural network with multiple inputs
+import vector_math
 
 def w_sum(a, b):
     assert(len(a) == len(b))
-    output = 0
-    for x,y in zip(a,b):
-        output += x * y
+    output = vector_math.vector_sum(vector_math.elementwise_multiplication(a,b))
     return output
 
 # step 1: An empty network
